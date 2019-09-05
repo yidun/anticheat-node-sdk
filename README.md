@@ -1,4 +1,4 @@
-# 反作弊纯服务端 Node SDK
+## 反作弊纯服务端 Node SDK
 
 ### 安装
 
@@ -17,7 +17,7 @@ const checker = new Chcker('you type', {
 });
 
 // 业务数据详见：http://support.dun.163.com/documents/15588071870066688?docId=150457664094261248
-// 其中：ip, account,phone,runEnv,operatingTime 是必须字段
+// 其中：ip, account,phone,runEnv,operatingTime 是必填字段
 checker.check({
   ip: '',
   account: '',

@@ -19,7 +19,7 @@ exports.genSignature = function (secretKey, params) {
     .reduce((result, key) => result + key + params[key], '');
 
   needSignatureStr += secretKey;
-	md5er.update(needSignatureStr, 'UTF-8');
+  md5er.update(needSignatureStr, 'UTF-8');
   return md5er.digest('hex');
 };
 
@@ -39,13 +39,13 @@ exports.request = function ({ url, method = 'POST', data }, callback) {
     rejectUnauthorized: false
   }
   let result = '';
-	const req = https.request(options, function (res) {
-		res.setEncoding('utf8');
-		res.on('data', chunk => result += chunk);
-		res.on('end', () => callback(null, result));
-		req.on('error', error => callback(error, null));
+  const req = https.request(options, function (res) {
+    res.setEncoding('utf8');
+    res.on('data', chunk => result += chunk);
+    res.on('end', () => callback(null, result));
+    req.on('error', error => callback(error, null));
   });
   req.on('error', error => callback(error, null));
-	req.write(content);
-	req.end();
+  req.write(content);
+  req.end();
 };
