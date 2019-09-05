@@ -1,0 +1,22 @@
+{
+  "name": "yidun-anticheat-node-sdk",
+  "version": "1.0.0",
+  "description": "anticheat node sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yidun/anticheat-node-sdk.git"
+  },
+  "keywords": [
+    "yidun"
+  ],
+  "author": "yidunfe@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yidun/anticheat-node-sdk/issues"
+  },
+  "homepage": "https://github.com/yidun/anticheat-node-sdk#readme"
+}
