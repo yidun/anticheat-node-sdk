@@ -10,16 +10,16 @@ const md5 = data => {
 
 const AnticheatChecker = require('./index')
 
-const checker = new AnticheatChecker('login', {
-  secretId: '',
-  secretKey: '',
-  businessId: ''
+const checker = new AnticheatChecker('activity', {
+  secretId: 'your secret id',
+  secretKey: 'your secret key',
+  businessId: 'your business id'
 });
 
 checker.check({
-  ip: 'x',
-  account: md5('x'),
-  phone: md5('x'),
+  ip: 'user ip',
+  account: md5('user account'),
+  phone: md5('user phone'),
   runEnv: 2,
   operatingTime: parseInt(Date.now() / 1000, 10)
 }, (error, data) => {
