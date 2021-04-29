@@ -2,7 +2,7 @@
 
 ### 安装
 
-`npm install yidun-anticheat-node-sdk --save`
+`npm install @yidun/anticheat-sdk-node --save`
 
 ### 使用
 

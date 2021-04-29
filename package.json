@@ -1,5 +1,5 @@
 {
-  "name": "yidun-anticheat-node-sdk",
+  "name": "@yidun/anticheat-sdk-node",
   "version": "1.0.0",
   "description": "anticheat node sdk",
   "main": "index.js",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/yidun/anticheat-node-sdk/issues"
   },
-  "homepage": "https://github.com/yidun/anticheat-node-sdk#readme"
+  "homepage": "https://github.com/yidun/anticheat-node-sdk#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
